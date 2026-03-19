@@ -1,12 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
-    <link rel="stylesheet" href="styles.css">   
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Modern Flow Solutions</title>   
+    <title>Modern Flow Solutions</title>
+    <style>
+        /* --- CSS: Design & Color Theory --- */
+        /* Palette: 
+           Dark: #1a202c (Neutral/Background)
+           Primary: #4c51bf (Indigo - Trust/Action)
+           Accent: #63b3ed (Light Blue - Clarity)
+           Text: #ffffff / #a0aec0
+        */
+
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #ffffff;
+            background-color: #1a202c;
+            line-height: 1.6;
+        }
+
+        /* --- Header: Background Image Overlay --- */
+        header {
+            background: linear-gradient(rgba(26, 32, 44, 0.85), rgba(26, 32, 44, 0.95)),
+                        url('https://images.unsplash.com') center/cover no-repeat;
+            padding: 100px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+            color: #63b3ed; /* Accent Color */
+        }
+
+        header p {
+            font-size: 1.2rem;
+            color: #a0aec0;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* --- Main: Section 1 (Solid Color) --- */
+        .content-solid {
+            background-color: #2d3748; /* Darker than body */
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        /* --- Main: Section 2 (Gradient) --- */
+        .content-gradient {
+            background: linear-gradient(135deg, #4c51bf 0%, #63b3ed 100%); /* Primary to Accent */
+            padding: 60px 20px;
+            text-align: center;
+            color: #fff;
+        }
+
+        /* --- Utility & Interactivity --- */
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #63b3ed;
+            color: #1a202c;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease; /* Hover Transition */
+        }
+
+        .btn:hover {
+            background-color: #fff;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            background-color: #1a202c;
+            color: #a0aec0;
+            font-size: 0.9rem;
+        }
+    </style>
 </head>
-<body>  
+<body>
+
     <header>
         <h1>Modern Flow</h1>
         <p>Streamline your digital infrastructure with intelligent, scalable, and secure cloud solutions.</p>
@@ -25,12 +101,12 @@
             <p>Schedule a free consultation with our experts today.</p>
             <a href="#" class="btn">Get Started</a>
         </section>
-        <link rel="stylesheet" href="styles.css">   
     </main>
-<link rel="stylesheet" href="styles.css">   
+
     <footer>
         <p>&copy; 2023 Modern Flow Solutions. All rights reserved.</p>
     </footer>
 
 </body>
 </html>
+
