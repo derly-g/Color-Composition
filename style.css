@@ -1,66 +1,82 @@
+/* Palette: #0f172a (Deep Navy), #115e59 (Teal), #2dd4bf (Mint) */
+:root {
+    --primary: #0f172a;
+    --secondary: #115e59;
+    --accent: #2dd4bf;
+    --light: #f8fafc;
+}
 
 body {
-            margin: 0;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            color: #ffffff;
-            background-color: #1a202c;
-            line-height: 1.6;
-        }
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    line-height: 1.6;
+    color: var(--light);
+    background-color: var(--primary);
+}
 
-        header {
-            background: linear-gradient(rgba(26, 32, 44, 0.85), rgba(26, 32, 44, 0.95)),
-                        url('https://images.unsplash.com') center/cover no-repeat;
-            padding: 100px 20px;
-            text-align: center;
-        }
+/* Header with Image Overlay & Transparency */
+header {
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /* Layering: Gradient (top) over Image (bottom) */
+    background: linear-gradient(rgba(15, 23, 42, 0.7), rgba(15, 23, 42, 0.7)), 
+                url('https://images.unsplash.com');
+    background-size: cover;
+    background-position: center;
+}
 
-        header h1 {
-            font-size: 3rem;
-            margin-bottom: 10px;
-            color: #63b3ed; /* Accent Color */
-        }
+header h1 {
+    font-size: 3.5rem;
+    margin-bottom: 10px;
+}
 
-        header p {
-            font-size: 1.2rem;
-            color: #a0aec0;
-            max-width: 600px;
-            margin: 0 auto;
-        }
+header p {
+    font-size: 1.2rem;
+    color: var(--accent);
+}
 
-        /* --- Main: Section 1 (Solid Color) --- */
-        .content-solid {
-            background-color: #2d3748; /* Darker than body */
-            padding: 60px 20px;
-            text-align: center;
-        }
+/* Section 1: Gradient Background */
+.gradient-section {
+    padding: 80px 20px;
+    text-align: center;
+    background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+}
 
-        /* --- Main: Section 2 (Gradient) --- */
-        .content-gradient {
-            background: linear-gradient(135deg, #4c51bf 0%, #63b3ed 100%); /* Primary to Accent */
-            padding: 60px 20px;
-            text-align: center;
-            color: #fff;
-        }
+/* Section 2: Solid Background */
+.solid-section {
+    padding: 80px 20px;
+    text-align: center;
+    background-color: var(--light);
+    color: var(--primary);
+}
 
-        /* --- Utility & Interactivity --- */
-        .btn {
-            display: inline-block;
-            padding: 10px 20px;
-            background-color: #63b3ed;
-            color: #1a202c;
-            text-decoration: none;
-            border-radius: 5px;
-            transition: background-color 0.3s ease; /* Hover Transition */
-        }
+/* Interactive Element: Hover State */
+.cta-button {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 12px 35px;
+    background-color: var(--accent);
+    color: var(--primary);
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+}
 
-        .btn:hover {
-            background-color: #fff;
-        }
+.cta-button:hover {
+    background-color: var(--light);
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(45, 212, 191, 0.3);
+}
 
-        footer {
-            text-align: center;
-            padding: 30px;
-            background-color: #1a202c;
-            color: #a0aec0;
-            font-size: 0.9rem;
-        }
+footer {
+    padding: 40px;
+    text-align: center;
+    font-size: 0.85rem;
+    background-color: var(--primary);
+    border-top: 1px solid var(--secondary);
+}
