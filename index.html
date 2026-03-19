@@ -4,27 +4,95 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Breathe Tech | Landing Page</title>
-    <!-- Linking the external CSS file -->
-    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Palette: #0f172a (Deep Navy), #115e59 (Teal), #2dd4bf (Mint) */
+        :root {
+            --primary: #0f172a;
+            --secondary: #115e59;
+            --accent: #2dd4bf;
+            --light: #f8fafc;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: var(--light);
+            background-color: var(--primary);
+        }
+
+        header {
+            height: 60vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            /* Background Image Overlay with Transparency */
+            background: linear-gradient(rgba(15, 23, 42, 0.8), rgba(15, 23, 42, 0.8)), 
+                        url('https://images.unsplash.com');
+            background-size: cover;
+            background-position: center;
+        }
+
+        header h1 { font-size: 3.5rem; margin-bottom: 0.5rem; }
+        header p { font-size: 1.2rem; color: var(--accent); }
+
+        /* Section 1: Gradient Background */
+        .gradient-section {
+            padding: 5rem 2rem;
+            background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+            text-align: center;
+        }
+
+        /* Section 2: Solid Background */
+        .solid-section {
+            padding: 5rem 2rem;
+            background-color: var(--light);
+            color: var(--primary);
+            text-align: center;
+        }
+
+        /* Hover State with Transition */
+        .cta-button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 30px;
+            background-color: var(--accent);
+            color: var(--primary);
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+
+        .cta-button:hover {
+            background-color: var(--light);
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(45, 212, 191, 0.4);
+        }
+
+        footer {
+            padding: 2rem;
+            text-align: center;
+            font-size: 0.9rem;
+            border-top: 1px solid var(--secondary);
+        }
+    </style>
 </head>
 <body>
 
     <header>
-        <div class="header-content">
-            <h1>Breathe Tech</h1>
-            <p>Software designed for human focus.</p>
-        </div>
+        <h1>Breathe Tech</h1>
+        <p>Software designed for human focus.</p>
     </header>
 
     <main>
-        <!-- Section 1: Gradient Background -->
         <section class="gradient-section">
             <h2>Deep Work Mode</h2>
             <p>Our gradient-driven interface helps your eyes relax while your mind works.</p>
             <a href="#" class="cta-button">Explore Features</a>
         </section>
 
-        <!-- Section 2: Solid Background -->
         <section class="solid-section">
             <h2>Crystal Clear Logic</h2>
             <p>Simple, solid foundations for your daily workflow. No clutter, no noise.</p>
