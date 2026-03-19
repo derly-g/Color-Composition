@@ -7,7 +7,6 @@ body {
             line-height: 1.6;
         }
 
-        /* --- Header: Background Image Overlay --- */
         header {
             background: linear-gradient(rgba(26, 32, 44, 0.85), rgba(26, 32, 44, 0.95)),
                         url('https://images.unsplash.com') center/cover no-repeat;
