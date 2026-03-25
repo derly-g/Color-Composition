@@ -11,7 +11,6 @@ body {
     padding: 0;
     font-family: 'Segoe UI', Arial, sans-serif;
     line-height: 3.6;
-    background-image: url('https://media.formula1.com/image/upload/c_lfill,w_3392/q_auto/v1740000001/fom-website/2025/Miscellaneous/hamilton-leclerc-ferrari-suits-2025.webp');
 }
 
 /* Header with Image Overlay & Transparency */
@@ -21,6 +20,7 @@ header {
     justify-content: center;
     align-items: center;
     text-align: center;
+    background-image: url('https://media.formula1.com/image/upload/c_lfill,w_3392/q_auto/v1740000001/fom-website/2025/Miscellaneous/hamilton-leclerc-ferrari-suits-2025.webp');
     /* Layering: Gradient (top) over Image (bottom) */
     background-size: cover;
     background-position: center;
