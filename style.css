@@ -7,10 +7,10 @@
 }
 
 body {
-    margin: 200;
+    margin: 0;
     padding: 0;
     font-family: 'Segoe UI', Arial, sans-serif;
-    line-height: 1.6;
+    line-height: 3.6;
     background-image: url('https://media.formula1.com/image/upload/c_lfill,w_3392/q_auto/v1740000001/fom-website/2025/Miscellaneous/hamilton-leclerc-ferrari-suits-2025.webp');
 }
 
@@ -22,8 +22,6 @@ header {
     align-items: center;
     text-align: center;
     /* Layering: Gradient (top) over Image (bottom) */
-    background: linear-gradient(rgba(15, 23, 42, 0.7), rgba(15, 23, 42, 0.7)), 
-                url('https://images.unsplash.com');
     background-size: cover;
     background-position: center;
 }
