@@ -15,7 +15,7 @@ body {
 
 /* Header with Image Overlay & Transparency */
 header {
-    height: 600vh;
+    height: 60vh;
     display: flex;
     justify-content: center;
     align-items: center;
