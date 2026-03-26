@@ -1,110 +1,36 @@
-/* 
-   Palette: Triadic/Cohesive Formula 1 Theme
-   - Rosso Corsa (Racing Red): #EF1A2D
-   - Giallo Modena (Ferrari Yellow): #FFEB00
-   - Carbon Black: #1A1A1A
-*/
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Arial Black', Gadget, sans-serif;
-}
-
-header {
-    background-color: #000000; /* Carbon Black */
-    color: #FFEB00; /* Ferrari Yellow */
-    padding: 50px 20px;
-    text-align: center;
-}
-
-header h1 {
-    font-size: 3.5rem;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-}
-
-header p {
-    font-size: 1.2rem;
-    color: #FFFFFF;
-    margin-top: 10px;
-}
-
-/* Section 1: Gradient Background + Image Overlay */
-.lineup-section {
-    position: relative;
-    min-height: 500px;
+body {
+    font-family: system-ui, sans-serif;
+    background-color: #f4f4f9;
     display: flex;
-    align-items: center;
     justify-content: center;
-    text-align: center;
-    color: white;
-    
-    /* Background Image with Transparency Overlay via Linear Gradient */
-    background: linear-gradient(
-        45deg, 
-        rgba(239, 26, 45, 0.8), /* Red with 80% transparency */
-        rgba(26, 26, 26, 0.8)   /* Black with 80% transparency */
-    ), 
-    url('https://images.ps-aws.com/c?url=https%3A%2F%2Fd3cm515ijfiu6w.cloudfront.net%2Fwp-content%2Fuploads%2F2025%2F02%2F01142453%2Flewis-hamilton-charles-leclerc-ferrari-f1-2025-1320x742.jpg');
-    
-    background-size: cover;
-    background-position: center;
-    padding: 40px;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
 }
 
-.content-box h2 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
-}
-
-/* Section 2: Solid Color Background */
-.legacy-section {
-    background-color: #EF1A2D; /* Solid Rosso Corsa */
-    color: #FFFFFF;
-    padding: 80px 20px;
+.card {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    max-width: 400px;
     text-align: center;
 }
 
-.legacy-section h2 {
-    font-size: 2rem;
-    margin-bottom: 15px;
-    color: #1A1A1A; /* High contrast text */
+.showcase-img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
 }
 
-.legacy-section p {
-    max-width: 800px;
-    margin: 0 auto;
-    line-height: 1.6;
-    font-size: 1.1rem;
-}
-
-/* Interactive Element: Hover State */
 .cta-button {
     display: inline-block;
-    margin-top: 20px;
-    padding: 12px 30px;
-    background-color: #FFEB00;
-    color: #1A1A1A;
+    background: #007bff;
+    color: white;
+    padding: 0.8rem 1.5rem;
     text-decoration: none;
-    font-weight: bold;
-    border-radius: 50px;
-    transition: background-color 0.4s ease, transform 0.2s ease;
+    border-radius: 5px;
+    margin-top: 1rem;
 }
 
-.cta-button:hover, .cta-button:focus {
-    background-color: #FFFFFF;
-    color: #EF1A2D;
-    transform: scale(1.05);
-}
-
-footer {
-    background-color: #000000;
-    color: #888888;
-    text-align: center;
-    padding: 30px;
-    font-size: 0.85rem;
-    border-top: 1px solid #333;
-}
