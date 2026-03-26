@@ -1,9 +1,9 @@
 /* Palette: #0f172a (Deep Navy), #115e59 (Teal), #2dd4bf (Mint) */
 :root {
     --primary: #8C030E;
-    --secondary: #59030A;
+    --secondary: #374C8C;
     --accent: #400207;
-    --light: #374C8C;
+    --light: #59030A;
 }
 
 body {
