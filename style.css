@@ -1,76 +1,111 @@
-/* Palette: #0f172a (Deep Navy), #115e59 (Teal), #2dd4bf (Mint) */
-:root {
-    --primary: #374C8C;
-    --secondary: #8C030E;
-    --accent: #400207;
-    --light: #59030A;
-}
+/* 
+   Palette: Triadic/Cohesive Formula 1 Theme
+   - Rosso Corsa (Racing Red): #EF1A2D
+   - Giallo Modena (Ferrari Yellow): #FFEB00
+   - Carbon Black: #1A1A1A
+*/
 
-body {
+* {
     margin: 0;
     padding: 0;
-    font-family: 'Segoe UI', Arial, sans-serif;
-    line-height: 3.6;
+    box-sizing: border-box;
+    font-family: 'Arial Black', Gadget, sans-serif;
 }
 
-/* Header with Image Overlay & Transparency */
 header {
-    height: 60vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    background-color: #1A1A1A; /* Carbon Black */
+    color: #FFEB00; /* Ferrari Yellow */
+    padding: 50px 20px;
     text-align: center;
-    background-image: url('https://media.formula1.com/image/upload/c_lfill,w_3392/q_auto/v1740000001/fom-website/2025/Miscellaneous/hamilton-leclerc-ferrari-suits-2025.webp');
+    border-bottom: 5px solid #EF1A2D;
 }
 
 header h1 {
     font-size: 3.5rem;
-    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }
 
 header p {
     font-size: 1.2rem;
-    color: var(--accent);
+    color: #FFFFFF;
+    margin-top: 10px;
 }
 
-/* Section 1: Gradient Background */
-.gradient-section {
-    padding: 80px 20px;
+/* Section 1: Gradient Background + Image Overlay */
+.lineup-section {
+    position: relative;
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
-    background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+    color: white;
+    
+    /* Background Image with Transparency Overlay via Linear Gradient */
+    background: linear-gradient(
+        45deg, 
+        rgba(239, 26, 45, 0.8), /* Red with 80% transparency */
+        rgba(26, 26, 26, 0.8)   /* Black with 80% transparency */
+    ), 
+    url('https://media.formula1.com/image/upload/c_lfill,w_3392/q_auto/v1740000001/fom-website/2025/Miscellaneous/hamilton-leclerc-ferrari-suits-2025.webp');
+    
+    background-size: cover;
+    background-position: center;
+    padding: 40px;
 }
 
-/* Section 2: Solid Background */
-.solid-section {
+.content-box h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+}
+
+/* Section 2: Solid Color Background */
+.legacy-section {
+    background-color: #EF1A2D; /* Solid Rosso Corsa */
+    color: #FFFFFF;
     padding: 80px 20px;
     text-align: center;
-    background-color: var(--light);
-    color: var(--primary);
+}
+
+.legacy-section h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: #1A1A1A; /* High contrast text */
+}
+
+.legacy-section p {
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+    font-size: 1.1rem;
 }
 
 /* Interactive Element: Hover State */
 .cta-button {
     display: inline-block;
-    margin-top: 25px;
-    padding: 12px 35px;
-    background-color: var(--accent);
-    color: var(--primary);
+    margin-top: 20px;
+    padding: 12px 30px;
+    background-color: #FFEB00;
+    color: #1A1A1A;
     text-decoration: none;
-    border-radius: 30px;
     font-weight: bold;
-    transition: all 0.3s ease-in-out;
+    border-radius: 50px;
+    transition: background-color 0.4s ease, transform 0.2s ease;
 }
 
-.cta-button:hover {
-    background-color: var(--light);
+.cta-button:hover, .cta-button:focus {
+    background-color: #FFFFFF;
+    color: #EF1A2D;
     transform: scale(1.05);
-    box-shadow: 0 10px 20px rgba(45, 212, 191, 0.3);
 }
 
 footer {
-    padding: 40px;
+    background-color: #000000;
+    color: #888888;
     text-align: center;
+    padding: 30px;
     font-size: 0.85rem;
-    background-color: var(--primary);
-    border-top: 1px solid var(--secondary);
+    border-top: 1px solid #333;
 }
