@@ -23,7 +23,7 @@ header {
     background-image: url('https://media.formula1.com/image/upload/c_lfill,w_3392/q_auto/v1740000001/fom-website/2025/Miscellaneous/hamilton-leclerc-ferrari-suits-2025.webp');
     /* Layering: Gradient (top) over Image (bottom) */
     background-size: cover;
-    background-position: center;
+    background-position: down;
 }
 
 header h1 {
