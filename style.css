@@ -1,111 +1,98 @@
 /* 
-   Palette: Triadic/Cohesive Formula 1 Theme
-   - Rosso Corsa (Racing Red): #EF1A2D
-   - Giallo Modena (Ferrari Yellow): #FFEB00
-   - Carbon Black: #1A1A1A
+   Palette: Triadic Theme
+   - Ferrari Red: #EF1A2D
+   - Modena Yellow: #FFEB00
+   - Pure White: #FFFFFF
 */
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Arial Black', Gadget, sans-serif;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
 }
 
+/* Header with Image Background and Transparency Overlay */
 header {
-    background-color: #1A1A1A; /* Carbon Black */
-    color: #FFEB00; /* Ferrari Yellow */
-    padding: 50px 20px;
-    text-align: center;
-    border-bottom: 5px solid #EF1A2D;
-}
-
-header h1 {
-    font-size: 3.5rem;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-}
-
-header p {
-    font-size: 1.2rem;
-    color: #FFFFFF;
-    margin-top: 10px;
-}
-
-/* Section 1: Gradient Background + Image Overlay */
-.lineup-section {
-    position: relative;
-    min-height: 500px;
+    height: 80vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
+                      url('https://media.formula1.com');
+    background-size: cover;
+    /* Centers the image and pushes the view up slightly to ensure faces are seen */
+    background-position: center 20%; 
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
     color: white;
-    
-    /* Background Image with Transparency Overlay via Linear Gradient */
-    background: linear-gradient(
-        45deg, 
-        rgba(239, 26, 45, 0.8), /* Red with 80% transparency */
-        rgba(26, 26, 26, 0.8)   /* Black with 80% transparency */
-    ), 
-    url('https://media.formula1.com/image/upload/c_lfill,w_3392/q_auto/v1740000001/fom-website/2025/Miscellaneous/hamilton-leclerc-ferrari-suits-2025.webp');
-    
-    background-size: cover;
-    background-position: center;
-    padding: 40px;
 }
 
-.content-box h2 {
+.header-overlay h1 {
+    font-size: clamp(2.5rem, 8vw, 5rem);
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 10px rgba(0,0,0,0.8);
+}
+
+.header-overlay p {
+    font-size: 1.5rem;
+    font-weight: 300;
+    background: rgba(239, 26, 45, 0.7); /* Red transparent tag */
+    display: inline-block;
+    padding: 5px 20px;
+}
+
+/* Section 1: Linear Gradient Background */
+.gradient-section {
+    padding: 80px 20px;
+    text-align: center;
+    color: white;
+    background: linear-gradient(135deg, #EF1A2D 0%, #8B0000 100%);
+}
+
+.gradient-section h2 {
     font-size: 2.5rem;
     margin-bottom: 20px;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
 }
 
 /* Section 2: Solid Color Background */
-.legacy-section {
-    background-color: #EF1A2D; /* Solid Rosso Corsa */
-    color: #FFFFFF;
+.solid-section {
     padding: 80px 20px;
     text-align: center;
-}
-
-.legacy-section h2 {
-    font-size: 2rem;
-    margin-bottom: 15px;
-    color: #1A1A1A; /* High contrast text */
-}
-
-.legacy-section p {
-    max-width: 800px;
-    margin: 0 auto;
-    line-height: 1.6;
-    font-size: 1.1rem;
-}
-
-/* Interactive Element: Hover State */
-.cta-button {
-    display: inline-block;
-    margin-top: 20px;
-    padding: 12px 30px;
-    background-color: #FFEB00;
-    color: #1A1A1A;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 50px;
-    transition: background-color 0.4s ease, transform 0.2s ease;
-}
-
-.cta-button:hover, .cta-button:focus {
     background-color: #FFFFFF;
+    color: #1A1A1A;
+}
+
+.solid-section h2 {
     color: #EF1A2D;
-    transform: scale(1.05);
+    margin-bottom: 15px;
+}
+
+/* Hover State / Interactive Element */
+.cta-btn {
+    margin-top: 25px;
+    padding: 15px 40px;
+    background-color: #FFEB00; /* Yellow */
+    color: #000;
+    border: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.cta-btn:hover, .cta-btn:focus {
+    background-color: #FFFFFF;
+    transform: scale(1.1);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
 }
 
 footer {
-    background-color: #000000;
-    color: #888888;
+    background-color: #1A1A1A;
+    color: #777;
     text-align: center;
-    padding: 30px;
-    font-size: 0.85rem;
-    border-top: 1px solid #333;
+    padding: 40px 20px;
+    font-size: 0.9rem;
+    border-top: 3px solid #FFEB00;
 }
