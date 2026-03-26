@@ -13,11 +13,10 @@
 }
 
 header {
-    background-color: #1A1A1A; /* Carbon Black */
+    background-color: #000000; /* Carbon Black */
     color: #FFEB00; /* Ferrari Yellow */
     padding: 50px 20px;
     text-align: center;
-    border-bottom: 5px solid #EF1A2D;
 }
 
 header h1 {
