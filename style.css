@@ -1,8 +1,8 @@
 /* Palette: #0f172a (Deep Navy), #115e59 (Teal), #2dd4bf (Mint) */
 :root {
-    --primary: #400207;
+    --primary: #374C8C;
     --secondary: #8C030E;
-    --accent: #374C8C;
+    --accent: #400207;
     --light: #59030A;
 }
 
@@ -20,10 +20,9 @@ header {
     justify-content: center;
     align-items: center;
     text-align: center;
+ position: fixed;
+  top: 50px;
     background-image: url('https://media.formula1.com/image/upload/c_lfill,w_3392/q_auto/v1740000001/fom-website/2025/Miscellaneous/hamilton-leclerc-ferrari-suits-2025.webp');
-    /* Layering: Gradient (top) over Image (bottom) */
-    background-size: cover;
-    background-position: down;
 }
 
 header h1 {
